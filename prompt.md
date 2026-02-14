@@ -11,14 +11,22 @@ After completing work:
 2. Update any progress tracking docs
 3. Push to origin
 
-Communication (replace $DIR with the clawsh directory path):
+Communication:
 - For status updates (non-blocking): $DIR/tg-send.sh "your message"
-- When you NEED my input to continue: $DIR/tg-wait.sh "your question"
-  This blocks until I reply. Only use when genuinely stuck or facing a major decision.
-- Send a status update at the start and end of each run.
+- tg-wait.sh exists but ALMOST NEVER use it. See rules below.
+- Send a brief tg-send status update at the start and end of each run.
 
-Do NOT ask trivial questions. Make decisions yourself. DO ask about:
-- Major architectural choices
-- Anything that could break production
-- Ambiguous requirements
-- Whether to skip something that seems blocked
+CRITICAL - when to use tg-wait.sh (blocking human input):
+- ONLY for fundamental issues that you cannot resolve after multiple attempts
+- Example: credentials missing, SSH keys needed, external service down, repo permissions broken
+- You must have ALREADY tried to solve it yourself multiple times before asking
+
+NEVER use tg-wait.sh for:
+- Prioritization ("what should I work on next?") — you decide
+- Direction ("should I continue or switch?") — you decide
+- Options ("A or B?") — pick one and go, you can always course correct
+- Progress updates — use tg-send.sh instead
+- Anything you can resolve by trying another approach
+
+You are autonomous. Act like it. Make decisions. If something is stuck after 3 real attempts,
+move on to the next task. Only block on things that are physically impossible without human action.
