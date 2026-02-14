@@ -22,7 +22,8 @@ if [ ! -f "$PROMPT_FILE" ]; then
   exit 1
 fi
 
-PROMPT=$(cat "$PROMPT_FILE")
+# Template $DIR in prompt so tg scripts resolve to absolute paths
+PROMPT=$(sed "s|\$DIR|$DIR|g" "$PROMPT_FILE")
 
 # Preflight: test claude + telegram comms
 echo "=== Preflight: testing claude and telegram ==="
