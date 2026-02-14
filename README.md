@@ -1,4 +1,12 @@
-# clawsh
+```
+       __                    __
+  ____/ /___ __      _______/ /_
+ / __/ / __ `/ | /| / / ___/ __ \
+/ /_/ / /_/ /| |/ |/ (__  ) / / /
+\___/_/\__,_/ |__/|__/____/_/ /_/
+
+   autonomous claude in a while loop
+```
 
 Autonomous Claude Code loop in ~50 lines of bash. No framework, no dependencies beyond `claude`, `curl`, `jq`.
 
