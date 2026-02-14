@@ -5,12 +5,10 @@
 / /_/ / /_/ /| |/ |/ (__  ) / / /
 \___/_/\__,_/ |__/|__/____/_/ /_/
 
-   autonomous claude in a while loop
+       bash loop + telegram. that's it.
 ```
 
-Autonomous Claude Code loop in ~50 lines of bash. No framework, no dependencies beyond `claude`, `curl`, `jq`.
-
-Claude runs in a loop on your VPS, picks up tasks, commits code, pushes, and pings you on Telegram when it needs input.
+Autonomous Claude Code on a VPS. No framework, no dependencies beyond `claude`, `curl`, `jq`.
 
 ```
 clawsh/
