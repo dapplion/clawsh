@@ -5,7 +5,7 @@
 / /_/ / /_/ /| |/ |/ (__  ) / / /
 \___/_/\__,_/ |__/|__/____/_/ /_/
 
-       bash loop + telegram. that's it.
+      ralph loop + telegram. that's it.
 ```
 
 Autonomous Claude Code on a VPS. No framework, no dependencies beyond `claude`, `curl`, `jq`.
